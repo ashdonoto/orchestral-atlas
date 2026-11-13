@@ -1,5 +1,7 @@
 # Orchestra Atlas — 管弦樂配器知識庫
 
+Repository：`orchestral-atlas`
+
 這是以 **AGENTS.md 驅動擴充**的靜態互動網站，將管弦樂樂器知識與配器技巧整理成可搜尋、可分類、可互相連結的條目。主題結合音樂編曲與 AI 專案管理，重點不只是一次性完成網頁，而是讓不同的 AI 在閱讀 `AGENTS.md` 後，都能依相同規則繼續新增內容。
 
 ## 已有功能
@@ -47,24 +49,21 @@ examples/new-entry-example.json 新條目範例（不會自動載入）
 
 ## GitHub Pages 發布
 
-1. 在 GitHub 建立一個 **Public** repository，例如 `orchestra-atlas`。
+1. 在 GitHub 建立一個 **Public** repository，例如 `orchestral-atlas`。
 2. 將此資料夾內的**所有檔案**上傳至 repository 根目錄，包括 `AGENTS.md` 和 `content/entries.json`（不要再包一層同名資料夾）。
 3. 到 repository 的 **Settings → Pages → Build and deployment**，選擇 **Deploy from a branch**，Branch 選 `main`、Folder 選 `/(root)`，儲存。
-4. 發布成功後，可使用 `https://<你的帳號>.github.io/orchestra-atlas/` 訪問，實際網址以 GitHub Pages 顯示為準。
+4. 發布成功後，可使用 `https://ashdonoto.github.io/orchestral-atlas/` 訪問，實際網址以 GitHub Pages 顯示為準。
 5. 開啟公開網站，檢查搜尋、篩選、卡片詳情正常運作，再繳交 Repository 與 Pages 網址。
 
 也可以在專案根目錄透過 Git CLI 上傳：
 
 ```bash
-git init
-git add .
-git commit -m "Initial Orchestra Atlas"
-git branch -M main
-git remote add origin https://github.com/<你的帳號>/orchestra-atlas.git
-git push -u origin main
+git add AGENTS.md README.md index.html assets content examples scripts SUBMISSION_TEMPLATE.md
+git commit -m "Update Orchestra Atlas"
+git push origin main
 ```
 
-建立遠端 repo 與 GitHub 認證需由你在自己的 GitHub 帳號完成。
+推送時需要具備此 repository 的 GitHub 寫入權限。
 
 ## 作業重點
 
@@ -73,4 +72,3 @@ git push -u origin main
 ## 內容說明
 
 示範知識為入門教學性摘要，音域與技術限制採概略描述；正式用於配器或演奏時，應另外查閱專門配器教材、樂器演奏資料及個別樂手能力。本文內容不是樂器性能的絕對保證。
-# orchestral-atlas

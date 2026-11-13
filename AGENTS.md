@@ -22,7 +22,7 @@ Orchestra Atlas 是一個以繁體中文為主、兼具英文術語的「互動�
 ## 3. 檔案與目錄結構
 
 ```text
-orchestra-atlas/
+./  # repository 根目錄
 ├── AGENTS.md               # AI 遵循的標準作業規則
 ├── README.md               # 人類閱讀的專案簡介、操作方式、發布教學
 ├── index.html              # 唯一入口，首頁與語意化結構
