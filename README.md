@@ -58,7 +58,7 @@ examples/new-entry-example.json 新條目範例（不會自動載入）
 也可以在專案根目錄透過 Git CLI 上傳：
 
 ```bash
-git add AGENTS.md README.md index.html assets content examples scripts SUBMISSION_TEMPLATE.md
+git add AGENTS.md README.md index.html assets content examples scripts
 git commit -m "Update Orchestra Atlas"
 git push origin main
 ```
